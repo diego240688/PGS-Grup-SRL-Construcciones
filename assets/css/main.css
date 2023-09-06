@@ -2675,33 +2675,31 @@ section {
 .footer .footer-legal .credits a {
   color: var(--color-primary);
 }
+/* Estilos generales para los iconos sociales */
 .social-icons {
-  float: right;
-  margin-top: 10px;
-  
-}
-.social-icons {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 15 10px 0 15px;
-  text-decoration: none;
-  
-  
-}
-.social-icons {
-  margin-left: 120px;
-  margin-right: 120px;
-  padding-left: 80px;
-}
-.social-icons a {
-  color: #FFD800; /* Cambia este valor al color amarillo deseado */
-}
-.social-icons {
+  position:absolute;
+  right: 15px; /* Ajusta la distancia desde el borde derecho según tus preferencias */
+  z-index: 999; /* Asegura que los iconos estén por encima de otros elementos */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  top: 10px; /* Ajusta la distancia desde la parte superior para evitar la superposición */
 }
+
+.social-icons a {
+  color: #FFD800; /* Cambia este valor al color amarillo deseado */
+  margin-right: 1px; /* Espacio entre los iconos */
+  text-decoration: none;
+}
+
+/* Media query para pantallas con una resolución de 412x915 */
+@media (max-width: 412px) {
+  .social-icons {
+      top: 0; /* Asegura que los iconos estén en la parte superior de la página */
+      position: absolute;
+  }
+}
+
 
 
 
