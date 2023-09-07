@@ -2695,7 +2695,7 @@ section {
 /* Media query para pantallas con una resolución de 412x915 */
 @media (max-width: 412px) {
   .social-icons {
-      top: 0; /* Asegura que los iconos estén en la parte superior de la página */
+      top: 10; /* Asegura que los iconos estén en la parte superior de la página */
       position: absolute;
   }
 }
