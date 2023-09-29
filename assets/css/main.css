@@ -2762,13 +2762,19 @@ section {
   color: #FFD800; /* Cambia este valor al color amarillo deseado */
   margin-right: 1px; /* Espacio entre los iconos */
   text-decoration: none;
+  
 }
 
 /* Media query para pantallas con una resolución de 412x915 */
 @media (max-width: 412px) {
   .social-icons {
-      top: 0; /* Asegura que los iconos estén en la parte superior de la página */
-      position: absolute;
+    top: auto;
+    bottom: -5px; /* Mover los iconos sociales hacia la parte inferior */
+    right: 10px; /* Ajusta la distancia desde el borde derecho*/
+    right: 325px;
+    
+      
+     
   }
     /* Ajusta el tamaño de los iconos */
     .social-icons i {
@@ -2779,26 +2785,46 @@ section {
 /* Media query para pantallas con una resolución de 425x564 */
 @media (max-width: 425px) and (max-height: 564px) {
   .social-icons {
-    top: 0; /* Asegura que los iconos estén en la parte superior de la página */
-    position: absolute;
+    top: auto;
+    bottom: -5px; /* Mover los iconos sociales hacia la parte inferior */
+    right: 10px; /* Ajusta la distancia desde el borde derecho*/
+    right: 335px;
+    
+    
   }
 }
-
+@media (max-width: 375px) and (max-height: 542px) {
+  .social-icons {
+    top: auto;
+    bottom: -10px; /* Ajusta la distancia desde la parte inferior */
+    right: 290px; /* Ajusta la distancia desde el borde derecho */
+    
+  }
+}
 
 /* Media query para pantallas con una resolución de 320x542 */
 @media (max-width: 320px) and (max-height: 542px) {
   
   .social-icons {
-      top:0; /* Asegura que los iconos estén en la parte superior de la página */
-      position: absolute;
+       top: auto;
+    bottom: -5px; /* Mover los iconos sociales hacia la parte inferior */
+    right: 10px; /* Ajusta la distancia desde el borde derecho*/
+    right: 235px;
+    
       
   }
 }
+
+
+
 /* Media query para pantallas con una resolución de 280x653 */
 @media (max-width: 280px) and (max-height: 653px) {
   .social-icons {
-      top: 0px; /* Asegura que los iconos estén en la parte superior de la página */
-      position: absolute;
+    top: auto;
+    bottom: -5px; /* Mover los iconos sociales hacia la parte inferior */
+    right: 10px; /* Ajusta la distancia desde el borde derecho*/
+    right: 100px;
+      
   }
 }
 
@@ -2914,6 +2940,37 @@ ul.inline-list li {
   text-transform: uppercase;
   
 }
+/* Pantalla de 425  x 564*/
+@media (max-width: 425px) and (max-height: 564px){
+  ul.inline-list li {
+    display: inline;
+    margin-right: 5px; /* Ajusta el espacio entre los elementos si es necesario */
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    font-size: 12px;
+    }
+}
+/* Pantalla de 412 */
+@media (max-width: 412px){
+  ul.inline-list li {
+    display: inline;
+    margin-right: 5px; /* Ajusta el espacio entre los elementos si es necesario */
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    font-size: 10px
+    }
+}
+/* Pantalla de 320x542 */
+@media (max-width: 320px) and (max-height: 542px){
+  ul.inline-list li {
+  display: inline;
+  margin-right: 5px; /* Ajusta el espacio entre los elementos si es necesario */
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-size: 10px
+  }
+}
+
 .construcciones h2{
 font-size: 32px;
 }
